@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-image: url("../assets/Header.png");
+    width: 100%;
+    min-height: 820px;
+    max-height: 820px;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 0 auto;
+    background-blend-mode: multiply;
+    color: #FFF;
+    display: flex;
+    justify-content: center; /* Center the nav within the header */
+    position: relative;
+}
+
+/* Navigation container */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Limit the nav width */
+    width: 100%;
+    padding: 0 20px; /* Add padding on both sides */
+    position: absolute;
+    top: 42px; /* Set 42px distance from the top */
+}
+
+/* Logo styling */
+.navbar-brand ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand li {
+    font-size: 24px;
+    padding-left: 20px; /* Space from the left edge */
+}
+
+.navbar-brand a {
+    color: #FFF;
+    text-decoration: none;
+    
+}
+
+/* Menu links */
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 40px; /* Spacing between links */
+    margin: 0;
+    padding-right: 20px; /* Space from the right edge */
+}
+
+.nav-link {
+    cursor: pointer;
+    transition: color 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    color: #1F41BB; 
+    background-color: #FFF;
+}
+
+.book-now  {
+    background-color: #1F41BB;
+}
+
+
+
