@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoworkFinder</title>
-    <link rel="stylesheet" href="styles/main-styles.css">
-    <link rel="stylesheet" href="styles/fonts.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/coworking-area.css">
-    <style>
-        ::selection {
-            background-color: #1fbb27;
-            color: white;
-}
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CoworkFinder</title>
+        <link rel="stylesheet" href="styles/main-styles.css">
+        <link rel="stylesheet" href="styles/fonts.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/coworking-area.css">
+        <link rel="stylesheet" href="styles/form.css">
+        <style>
+            ::selection {
+                background-color: #1fbb27;
+                color: white;
+    }
 
-        ::-moz-selection {
-            background-color: #1F41BB;
-            color: white;
-        }
-    </style>
-</head>
+            ::-moz-selection {
+                background-color: #1F41BB;
+                color: white;
+            }
+        </style>
+    </head>
 <body>
+    <!--Header-->
     <section id="header">
         <video autoplay muted loop id="background-video">
             <source src="../assets/header-video.mp4" type="video/mp4">
@@ -36,12 +38,12 @@
             <!-- Menu Links -->
             <nav class="nav-links">
                 <ul class="poppins-regular">
-                    <li class="nav-link">Home</li>
-                    <li class="nav-link">Features</li>
-                    <li class="nav-link">Services</li>
-                    <li class="nav-link">About</li>
-                    <li class="nav-link">Location</li>
-                    <li class="nav-link book-now">Book Now</li>
+                    <li class="nav-link">Inicio</li>
+                    <li class="nav-link">Caracter&iacute;sticas</li>
+                    <li class="nav-link">Servicios</li>
+                    <li class="nav-link">Nosotros</li>
+                    <li class="nav-link">Encu&eacute;ntranos</li>
+                    <li class="nav-link book-now">Reserva ahora</li>
                 </ul>
             </nav>
         </div>
@@ -56,12 +58,15 @@
             </div>
             <div class="ul-cta">
                 <ul>
-                    <li class="cta-button">Book a tour</li>
-                    <li class="cta-about">About Us</li>
+                    <li class="cta-button">Reserva ahora</li>
+                    <li class="cta-about">Sobre nosotros</li>
                 </ul>
             </div>
         </div>        
     </section>
+    <!--Final del Header-->
+
+    <!--Seccion de Coworking e Iconos-->
     <section>
         <div class="coworking-area">
             <div class="imagen-coworking">
@@ -100,6 +105,33 @@
             
         </div>
     </section>
+    <!--Fin de seccion de Coworking e Iconos-->
+
+    <!--Formulario-->
+    <section>
+        <div class="form-section">
+            <div class="form">
+                <p>Realiza tu reserva</p>
+                <form action="" method="dialog">
+                    <label for="email">Email
+                        <input type="email" name="email" id="email" placeholder="ejemplo@email.com">
+                    </label>
+                    <label for="celular">Celular
+                        <input type="number" name="celular" id="celular" placeholder="32123456">
+                    </label>
+                    <label for="fecha-ini">
+                        <input type="date" name="fecha-ini" id="fecha-ini">
+                    </label>
+                    <label for="fecha-fin">
+                        <input type="date" name="fecha-fin" id="fecha-fin">
+                    </label>
+                    <label for="de-acuerdo"><input type="checkbox" name="de-acuerdo" id="de-acuerdo"> Estoy de acuerdo con los <a href="http://" target="_blank" rel="noopener noreferrer">Términos de servicio</a>  y la <a href="http://" target="_blank" rel="noopener noreferrer">Política de privacidad</a> de CoworkFinder.</label>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--Final del Formulario-->
 </body>
 
 </html>

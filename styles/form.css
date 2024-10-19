@@ -1,0 +1,20 @@
+.form-section {
+    background-image: url(../assets/contact.png);
+    background-size: cover;
+    height: 100%;
+    min-height: 700px;
+    max-height: 700px;
+    max-width: 1440px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 0 auto;
+    padding-right: 120px;
+}
+
+.form {
+    width: 585px;
+    min-height: 616px;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+}
