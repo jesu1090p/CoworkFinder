@@ -6,11 +6,27 @@
     <title>CoworkFinder</title>
     <link rel="stylesheet" href="styles/main-styles.css">
     <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/coworking-area.css">
+    <style>
+        ::selection {
+            background-color: #1fbb27;
+            color: white;
+}
+
+        ::-moz-selection {
+            background-color: #1F41BB;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <section id="header">
+        <video autoplay muted loop id="background-video">
+            <source src="../assets/header-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
         <div class="nav">
-            <!-- Logo Section -->
             <div class="navbar-brand">
                 <ul>
                     <li class="poppins-semibold"><a href="/">CoworkFinder</a></li>
@@ -45,6 +61,44 @@
                 </ul>
             </div>
         </div>        
+    </section>
+    <section>
+        <div class="coworking-area">
+            <div class="imagen-coworking">
+                <img src="./assets/coworking-area.png" alt="Coworking Area">
+            </div>
+            <div class="icons-section">
+                <h2 class="h2-coworking">Los mejores espacios de trabajo a tu disposición</h2>
+                <p class="p-coworking">Espacios comodos de coworking para integración y eficiencia en el trabajo</p>
+            
+                <div class="icon-text-row">
+                    <img src="/assets/icons/ic-clock.png" alt="Clock Icon">
+                    <div>
+                        <h3 class="h3-coworking">Manejo de horarios flexibles</h3>
+                        <p class="p-coworking">Alquilar espacios ya sea un día o un tiempo extenso de semanas</p>
+                    </div>
+                </div>
+            
+                <div class="icon-text-row">
+                    <img src="/assets/icons/snack.png" alt="Snack Icon">
+                    <div>
+                        <h3 class="h3-coworking">Bebidas y aperitivos</h3>
+                        <p class="p-coworking">Consumibles alimenticios a su disposición</p>
+                    </div>
+                </div>
+            
+                <div class="icon-text-row">
+                    <img src="/assets/icons/gaming.png" alt="Gaming Icon">
+                    <div>
+                        <h3 class="h3-coworking">Zonas recreativas</h3>
+                        <p class="p-coworking">
+                            Manejamos espacios que no solo son para reunirse a trabajar sino con zonas de descanso para actividades recreativas
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
     </section>
 </body>
 
