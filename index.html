@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/coworking-area.css">
         <link rel="stylesheet" href="styles/form.css">
-        <link href="https://unpaskg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <style>
             ::selection {
                 background-color: #1fbb27;
@@ -110,23 +110,23 @@
 
     <!--Formulario-->
     <section>
-        <div class="form-section">
+        <div class="form-section" >
             <div class="form-container">
                 <p class="p-form">Realiza tu reserva</p>
                 <form action="" method="dialog">
                     <div class="top-inputs">
-                        <div class="input-row">
+                        <div class="input-row" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
                             <label for="email">Email:
                             </label>
                                 <input type="email" name="email" id="email" placeholder="ejemplo@coworkfinder.com">
                         </div>
-                        <div class="input-row">
+                        <div class="input-row" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
                             <label for="celular">Celular:
                             </label>                            
                                 <input type="number" name="celular" id="celular" placeholder="3123456789">
                         </div>
                     </div>
-                    <div class="dates">
+                    <div class="dates" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
                         <div class="date">
                             <label for="fecha-ini">Fecha de inicio
                             </label>
@@ -138,21 +138,22 @@
                             <input type="date" name="fecha-fin" id="fecha-fin">
                         </div>
                     </div>
-                    <div class="terms">
+                    <div class="terms" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
                         <p><input type="checkbox" name="de-acuerdo" id="de-acuerdo" class="checkbox-large">
                         Estoy de acuerdo con los <a href="http://" target="_blank" rel="noopener noreferrer">Términos de servicio</a>  y la <a href="http://" target="_blank" rel="noopener noreferrer">Política de privacidad</a> de CoworkFinder.
                         </p>
                     </div>
-                    <button class="submit" type="submit">Enviar</button>
+                    <button class="submit" type="submit" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">Enviar</button>
                 </form>
             </div>
         </div>  
     </section>
     <!--Final del Formulario-->
+
     <!--Animaciones de AOL-->
-    <script src="httpssd://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        //AOS.init();
+        AOS.init();
       </script>
 </body>
 
