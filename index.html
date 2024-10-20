@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/coworking-area.css">
         <link rel="stylesheet" href="styles/form.css">
+        <link href="https://unpaskg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <style>
             ::selection {
                 background-color: #1fbb27;
@@ -16,7 +17,7 @@
     }
 
             ::-moz-selection {
-                background-color: #1F41BB;
+                background-color: #1fbb27;
                 color: white;
             }
         </style>
@@ -76,7 +77,7 @@
                 <h2 class="h2-coworking">Los mejores espacios de trabajo a tu disposición</h2>
                 <p class="p-coworking">Espacios comodos de coworking para integración y eficiencia en el trabajo</p>
             
-                <div class="icon-text-row">
+                <div class="icon-text-row" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                     <img src="/assets/icons/ic-clock.png" alt="Clock Icon">
                     <div>
                         <h3 class="h3-coworking">Manejo de horarios flexibles</h3>
@@ -84,7 +85,7 @@
                     </div>
                 </div>
             
-                <div class="icon-text-row">
+                <div class="icon-text-row" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                     <img src="/assets/icons/snack.png" alt="Snack Icon">
                     <div>
                         <h3 class="h3-coworking">Bebidas y aperitivos</h3>
@@ -92,7 +93,7 @@
                     </div>
                 </div>
             
-                <div class="icon-text-row">
+                <div class="icon-text-row" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                     <img src="/assets/icons/gaming.png" alt="Gaming Icon">
                     <div>
                         <h3 class="h3-coworking">Zonas recreativas</h3>
@@ -110,28 +111,49 @@
     <!--Formulario-->
     <section>
         <div class="form-section">
-            <div class="form">
-                <p>Realiza tu reserva</p>
+            <div class="form-container">
+                <p class="p-form">Realiza tu reserva</p>
                 <form action="" method="dialog">
-                    <label for="email">Email
-                        <input type="email" name="email" id="email" placeholder="ejemplo@email.com">
-                    </label>
-                    <label for="celular">Celular
-                        <input type="number" name="celular" id="celular" placeholder="32123456">
-                    </label>
-                    <label for="fecha-ini">
-                        <input type="date" name="fecha-ini" id="fecha-ini">
-                    </label>
-                    <label for="fecha-fin">
-                        <input type="date" name="fecha-fin" id="fecha-fin">
-                    </label>
-                    <label for="de-acuerdo"><input type="checkbox" name="de-acuerdo" id="de-acuerdo"> Estoy de acuerdo con los <a href="http://" target="_blank" rel="noopener noreferrer">Términos de servicio</a>  y la <a href="http://" target="_blank" rel="noopener noreferrer">Política de privacidad</a> de CoworkFinder.</label>
-                    <button type="submit">Enviar</button>
+                    <div class="top-inputs">
+                        <div class="input-row">
+                            <label for="email">Email:
+                            </label>
+                                <input type="email" name="email" id="email" placeholder="ejemplo@coworkfinder.com">
+                        </div>
+                        <div class="input-row">
+                            <label for="celular">Celular:
+                            </label>                            
+                                <input type="number" name="celular" id="celular" placeholder="3123456789">
+                        </div>
+                    </div>
+                    <div class="dates">
+                        <div class="date">
+                            <label for="fecha-ini">Fecha de inicio
+                            </label>
+                            <input type="date" name="fecha-ini" id="fecha-ini">
+                        </div>
+                        <div class="date">
+                            <label for="fecha-fin">Fecha final
+                            </label>
+                            <input type="date" name="fecha-fin" id="fecha-fin">
+                        </div>
+                    </div>
+                    <div class="terms">
+                        <p><input type="checkbox" name="de-acuerdo" id="de-acuerdo" class="checkbox-large">
+                        Estoy de acuerdo con los <a href="http://" target="_blank" rel="noopener noreferrer">Términos de servicio</a>  y la <a href="http://" target="_blank" rel="noopener noreferrer">Política de privacidad</a> de CoworkFinder.
+                        </p>
+                    </div>
+                    <button class="submit" type="submit">Enviar</button>
                 </form>
             </div>
-        </div>
-    </section>
+        </div>  
+    </section>
     <!--Final del Formulario-->
+    <!--Animaciones de AOL-->
+    <script src="httpssd://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        //AOS.init();
+      </script>
 </body>
 
 </html>

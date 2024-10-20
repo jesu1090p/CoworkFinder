@@ -9,12 +9,142 @@
     justify-content: end;
     align-items: center;
     margin: 0 auto;
-    padding-right: 120px;
 }
 
-.form {
+.form-container {
     width: 585px;
     min-height: 616px;
     background-color: rgba(0, 0, 0, 0.8);
     display: flex;
+    flex-direction: column;
+    gap: 2px;
 }
+
+
+.p-form {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    color: #fff;
+    padding: 16px
+}
+
+.input-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 501px;
+    justify-content: space-between;
+    padding-bottom: 24px;
+    
+}
+
+.form-container label {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    justify-items: flex-start;
+    align-items: center;
+    padding-left: 42px;
+    width: 150px;
+}
+
+input[type=email],input[type=number] {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: #fff;
+    padding: 16px;
+    width: 391px;    
+}
+
+input[type=date] {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: #fff;
+    padding: 16px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.dates {
+    width: 501px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.dates label {
+    width: 244px;
+    padding-left: 0px;
+    padding-bottom: 12px;
+}
+
+.date {
+    width: 229px;
+    display: flex;
+    flex-direction: column;
+}
+
+.date:first-of-type {
+    padding-right: 5px;
+}
+
+.checkbox-large {
+    width: 16px;  
+    height: 14px; 
+    transform: scale(1.5); 
+    margin: 5px;
+  }
+.terms {
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: #fff;
+    padding: 16px;
+    width: 460px;
+    margin-left: 42px;
+    padding: 32px 10px 16px 0px;
+}
+
+.terms a{
+    color: #1fbb27;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.terms a:hover{
+    color: lightgrey;
+    text-decoration: underline;
+}
+
+.submit {
+    background-color: #1F41BB;
+    display: flex;
+    justify-content: center;
+    width: 460px;
+    margin-left: 42px;
+    margin-top: 30px;
+    padding: 16px;
+    border: #1F41BB;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight:500;
+    letter-spacing: 2px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.submit:hover {
+    background-color:#1fbb27;
+    cursor: pointer;
+}
+
+  
+ 
