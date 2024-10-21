@@ -1,0 +1,16 @@
+.galeria_asociados p {
+    font-family: "Poppins", sans-serif;
+    font-size: 34px;
+    color: #292929;
+    text-align: center;
+    font-weight: bold;
+}
+
+.galeria img {
+    max-width: 300px;
+    object-fit: contain;
+}
+
+.galeria {
+    padding-bottom: 120px;
+}
