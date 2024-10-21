@@ -6,10 +6,8 @@
     color: #334047;
     font-size: 2rem;
     display: flex;
-    padding-bottom: 40px;
-    flex-wrap: row;
-    width: 1200px;
     justify-content: center;
+    padding-bottom: 40px;
 }
 
 /* Container for the cards */
