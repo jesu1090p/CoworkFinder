@@ -19,3 +19,12 @@
 .content {
     z-index: 1;
 }
+
+.map {
+    text-align: center;
+    padding-top: 50px;
+}
+
+html {
+    scroll-behavior: smooth;
+}

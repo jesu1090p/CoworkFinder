@@ -1,0 +1,54 @@
+  /* Estilos para el modal */
+  dialog {
+    font-family: "Poppins", sans-serif;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    text-align: left;
+    margin: auto;
+    background-color: white;
+    position: relative;
+    z-index: 10; /* Para que esté encima del fondo oscuro */
+  }
+
+  /* Fondo oscuro al activar el modal */
+  dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
+    transition: background-color 0.3s ease;
+  }
+
+  /* Otros estilos del modal */
+  .modal-header {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .modal-content p {
+    margin: 5px 0;
+  }
+
+  .modal-buttons button {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .close-btn {
+    background-color: #f44336;
+    color: white;
+  }
+
+  .ok-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  /* Efecto de desenfoque en el fondo */
+  body.modal-open {
+    filter: blur(5px);
+    transition: filter 0.3s ease;
+  }

@@ -1,0 +1,27 @@
+.about-us {
+    background-color: #f5f5f5; /* Fondo de la sección */
+    padding: 40px; /* Espaciado interior */
+     /* Ancho máximo */
+    margin: 0 auto; /* Centrar */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.about-content {
+    text-align: left; /* Alinear texto a la izquierda */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-content h2 {
+    font-family: "Poppins", sans-serif; /* Tipografía */
+    color: #1F41BB; /* Color del encabezado */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.about-content p {
+    font-family: "Poppins", sans-serif; /* Tipografía */
+    color: #333; /* Color del texto */
+    line-height: 1.6; /* Altura de línea para mejor legibilidad */
+    margin-bottom: 15px; /* Espaciado entre párrafos */
+}

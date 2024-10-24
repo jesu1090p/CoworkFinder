@@ -1,0 +1,84 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1F41BB; /* Fondo del footer */
+    padding: 40px 0; /* Espaciado vertical */
+    margin: 0 auto; /* Centrar */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around; /* Espaciado entre columnas */
+    width: 100%;
+    max-width: 572px; /* Ancho de las columnas */    
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-title {
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-title a {
+    text-decoration: none;
+    color: #FFF;
+    transition: text-shadow 0.3s ease;
+}
+
+.footer-title a:hover {
+    text-shadow: 0 0 4px #FFF
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinear los elementos al inicio */
+}
+
+.footer-column h3 {
+    color: #FFF; /* Color de los encabezados */
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.footer-column ul {
+    list-style: none; /* Eliminar puntos de lista */
+    padding: 0; /* Sin padding */
+}
+
+.footer-column li {
+    color: #C4C4C4; /* Color de los enlaces */
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 5px; /* Espaciado entre elementos de la lista */
+}
+
+.footer-column a {
+    text-decoration: none; /* Sin subrayado */
+    color: inherit; /* Heredar color de li */
+}
+
+.footer-column a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+.divider {
+    width: 90%; /* Ancho del divider */
+    height: 2px; /* Altura del divider */
+    background-color: white; /* Color del divider */
+    margin: 20px 0; /* Espaciado vertical */
+}
+
+.footer-brand {
+    font-family: "Poppins", sans-serif;
+    color: white; /* Color del texto */
+    text-align: left; /* Alinear a la izquierda */
+}
+
+.footer-brand a {
+    color: white; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.footer-brand a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
