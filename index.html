@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="styles/escogernos.css">
         <link rel="stylesheet" href="styles/footer.css">        
         <link rel="stylesheet" href="styles/about.css">
+        <link rel="stylesheet" href="styles/chevron-up.css">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <style>
             ::selection {
@@ -75,7 +76,7 @@
     <!--Final del Header-->
 
     <!--Inicio Mapa-->
-    <section class="map">
+    <section class="map" id="buscador">
       <div>
         <img src="./assets/Espacios inicio.png" alt="">
       </div>
@@ -83,7 +84,7 @@
     <!--Fin Mapa-->
 
    <!--Inicio de la galeria-->
-   <section class="galeria_asociados">
+   <section class="galeria_asociados" id="socios">
     <p>Algunos de nuestros Coworking asociados</p>
     <h5>Estas empresas ya han confiado en nosotros</h5>
     <div class="galeria-v2">
@@ -129,7 +130,7 @@
 
     <!--Formulario-->
     <section>
-      <div class="heading">
+      <div class="heading" id="contacto">
         <p class="p-form">Asóciate con nosotros</p>
         <h5>Únete a nuestra red de aliados y potencia el crecimiento de tu empresa</h5>
       </div>
@@ -203,7 +204,7 @@
     
     <!--Inicio de las valoraciones-->
     <section>
-        <div class="valoraciones">
+        <div class="valoraciones" id="testimonios">
             <div class="h1-valoraciones">
                 <h1>Valoraciones de nuestros usuarios</h1>
             </div>
@@ -266,7 +267,7 @@
 
     <!--Seccion de Coworking e Iconos-->
      <section>
-      <div class="coworking-area">
+      <div class="coworking-area" id="espacios">
           <div class="imagen-coworking">
               <img src="./assets/coworking-area.png" alt="Coworking Area">
           </div>
@@ -306,7 +307,7 @@
   <!--Fin de seccion de Coworking e Iconos-->
 
   <!--Seccion Escogernos-->
-  <div class="escogenos">
+  <div class="escogenos" id="sobre-nosotros">
 
     <section class="flex-container">
       <div class="row heading-row">
@@ -407,6 +408,12 @@
         <a href="/">CoworkFinder</a>
       </h2>
     </footer>
+
+    <a href="#" class="chevron-up" id="chevronUp">
+      &#8593; <!-- Este es un chevron hacia arriba en HTML -->
+      <!-- Alternativamente, si usas Font Awesome, puedes usar esto: 
+      <i class="fas fa-chevron-up"></i> -->
+  </a>
     
     <!--Footer end-->
     
@@ -432,6 +439,28 @@
         }
     });
 });
+      </script>
+
+      <script>
+        // Mostrar u ocultar el botón al desplazarse
+window.onscroll = function() {
+    const chevronUp = document.getElementById("chevronUp");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        chevronUp.style.display = "block"; // Mostrar botón
+    } else {
+        chevronUp.style.display = "none"; // Ocultar botón
+    }
+};
+
+// Agregar el comportamiento de desplazamiento suave
+document.getElementById("chevronUp").addEventListener("click", function(e) {
+    e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Desplazamiento suave hacia arriba
+    });
+});
+
       </script>
 </body>
 
